@@ -33,7 +33,11 @@ gcloud projects add-iam-policy-binding $PROJECT_ID \
 Now clone the git repo which houses the code. Be sure to read through the files first, there are some values you must update to fit your specific use-case.
 
 ```
-git clone https://https://github.com/eric-lyons/add-column-csv-gcs-to-bq.git
+git clone https://github.com/eric-lyons/add-column-csv-gcs-to-bq
+```
+
+```
+cd function
 ```
 
 Deploy the function
