@@ -37,7 +37,7 @@ git clone https://github.com/eric-lyons/add-column-csv-gcs-to-bq
 ```
 
 ```
-cd function
+cd add-column-csv-gcs-to-bq/function
 ```
 
 Deploy the function
