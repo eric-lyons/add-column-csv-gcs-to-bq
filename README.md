@@ -4,6 +4,8 @@ Creates a cloud function which accepts a csv, adds a column to the csv, then upl
 Main Doc: https://cloud.google.com/functions/docs/tutorials/storage
 https://cloud.google.com/functions/docs/tutorials/storage#functions-prepare-environment-python
 
+Cloud functions do not currently support multi-region. For ease of use and keeping data in within the same region, it may be easer -- as well as cost saving -- to use a regional bucket. 
+
 1. Create two regional buckets, where the name is a globally unique bucket name, and REGION is the region in which you plan to deploy your functions:
 
 The first is the source bucket you will uplaod the CSV to.
