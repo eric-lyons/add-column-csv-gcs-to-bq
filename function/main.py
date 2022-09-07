@@ -49,9 +49,9 @@ def add_column(bucket, name):
     # add new column and propagate cells with the file name
     df["file_name"] = name
     #print out head of the 
-    # 
+    # remove spaces in column names -- if not replaced this will cause a BQ error
     df.columns = df.columns.str.replace(' ','_')
-    # 
+    # remove / in column names -- if not replaced this will cause a BQ error
     df.columns = df.columns.str.replace('/','_')
 
     return df
