@@ -17,6 +17,11 @@ The second is the processing bucket which will upload the CSV to BigQuery.
 ```
 gsutil mb -l REGION gs://destinationbucket
 ```
+
+```
+gsutil retention set 7d gs://destinationbucket
+```
+
 To use Cloud Storage functions, grant the pubsub.publisher role to the Cloud Storage service account:
 
 ```
